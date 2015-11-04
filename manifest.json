@@ -1,5 +1,5 @@
 {
-	"manifest_version": 1,
+	"manifest_version": 2,
 	
 	"name": "Tumblr Filter",
 	"description": "Filter your Tumblr Dashboard by post type",
