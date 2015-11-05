@@ -1,0 +1,170 @@
+html{
+	height: 219px;
+}
+
+
+#toggles input[type=checkbox]{
+    display: none;
+}
+
+.textUp{
+
+	background-image: url(shapes/text.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.textDown{
+
+  background-image: url(greyed/textG.png);
+  width: 49px;
+  height: 48px;
+  border: none;
+  outline: 0;
+  background-color: transparent;
+  margin: 5px;
+}
+
+.chatUp{
+	background-image: url(shapes/chat.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.chatDown{
+  background-image: url(greyed/chatG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.linkUp{
+	background-image: url(shapes/link.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.linkDown{
+  background-image: url(greyed/linkG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.musicUp{
+	background-image: url(shapes/music.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.musicDown{
+  background-image: url(greyed/musicG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.pictureUp{
+	background-image: url(shapes/picture.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.pictureDown{
+  background-image: url(greyed/pictureG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.quoteUp{
+	background-image: url(shapes/quote.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.quoteDown{
+  background-image: url(greyed/quoteG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.videoUp{
+	background-image: url(shapes/video.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.videoDown{
+  background-image: url(greyed/videoG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
+
+.askUp{
+	background-image: url(shapes/ask.png);
+	width: 49px;
+    height: 48px;
+    border: none;
+   	outline: 0;
+   	background-color: transparent;
+   	margin: 5px;
+}
+
+.askDown{
+  background-image: url(greyed/askG.png);
+  width: 49px;
+    height: 48px;
+    border: none;
+    outline: 0;
+    background-color: transparent;
+    margin: 5px;
+}
