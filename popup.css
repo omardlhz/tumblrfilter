@@ -1,7 +1,45 @@
 html{
 	height: 219px;
+  background-color: #36465D;
 }
 
+p{
+  text-align: center;
+}
+
+p.header{
+  width: 270px;
+  text-align: center;
+  font-size: 40px;
+  margin-top: 0px;
+  margin-bottom: 0px;
+  font-family: 'Patua One', cursive;
+  color: white;
+}
+
+.footer{
+  display: inline-block;
+  width: 100%;
+  font-size: 10px;
+  float: right;
+  margin-bottom: 5px;
+  color: white;
+}
+
+.footer a{
+  color: white;
+}
+
+.footer a:visited{
+  color: white;
+}
+
+#toggles{
+  text-align: center;
+  border-radius: 10px;
+  background-color: white;
+  margin-bottom: 8px;
+}
 
 #toggles input[type=checkbox]{
     display: none;
@@ -16,6 +54,7 @@ html{
    	outline: 0;
    	background-color: transparent;
    	margin: 5px;
+    margin-top: 15px;
 }
 
 .textDown{
@@ -27,6 +66,7 @@ html{
   outline: 0;
   background-color: transparent;
   margin: 5px;
+  margin-top: 15px;
 }
 
 .chatUp{
@@ -57,6 +97,7 @@ html{
    	outline: 0;
    	background-color: transparent;
    	margin: 5px;
+    margin-top: 15px;
 }
 
 .linkDown{
@@ -67,6 +108,7 @@ html{
     outline: 0;
     background-color: transparent;
     margin: 5px;
+    margin-top: 15px;
 }
 
 .musicUp{
@@ -97,6 +139,7 @@ html{
    	outline: 0;
    	background-color: transparent;
    	margin: 5px;
+    margin-top: 15px;
 }
 
 .pictureDown{
@@ -107,6 +150,7 @@ html{
     outline: 0;
     background-color: transparent;
     margin: 5px;
+    margin-top: 15px;
 }
 
 .quoteUp{
@@ -117,6 +161,7 @@ html{
    	outline: 0;
    	background-color: transparent;
    	margin: 5px;
+    margin-top: 15px;
 }
 
 .quoteDown{
@@ -127,6 +172,7 @@ html{
     outline: 0;
     background-color: transparent;
     margin: 5px;
+    margin-top: 15px;
 }
 
 .videoUp{
@@ -167,4 +213,34 @@ html{
     outline: 0;
     background-color: transparent;
     margin: 5px;
+}
+
+.btn {
+  background: #fafafa;
+  background-image: -webkit-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -moz-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -ms-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: -o-linear-gradient(top, #fafafa, #e0e0e0);
+  background-image: linear-gradient(to bottom, #fafafa, #e0e0e0);
+  font-family: Arial;
+  color: #6b6b6b;
+  font-size: 15px;
+  margin-top: 10px;
+  padding: 10px 40px 10px 40px;
+  width: 100%;
+  border: solid #cfcfcf 1px;
+  text-decoration: none;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  outline: none;
+}
+
+.btn:hover {
+  background: #e0e0e0;
+  background-image: -webkit-linear-gradient(top, #e0e0e0, #fafafa);
+  background-image: -moz-linear-gradient(top, #e0e0e0, #fafafa);
+  background-image: -ms-linear-gradient(top, #e0e0e0, #fafafa);
+  background-image: -o-linear-gradient(top, #e0e0e0, #fafafa);
+  background-image: linear-gradient(to bottom, #e0e0e0, #fafafa);
+  text-decoration: none;
 }

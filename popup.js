@@ -130,9 +130,14 @@ function save(){
         setTimeout(function() {
         status.textContent = '';
         }, 750);
-        var myurl = "www.tumblr.com";
-        var currenturl = window.location.hostname;
+        var myurl = "https://www.tumblr.com/dashboard";
+        var currenturl = "";
+        chrome.tabs.getCurrent(function(tab){
+        console.log(tab.url);
+        }
+        );
         if(myurl == currenturl){
+            chrome.tabs.reload()
         }
     });
 }
