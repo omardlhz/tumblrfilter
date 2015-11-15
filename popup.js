@@ -132,13 +132,15 @@ function save(){
         }, 750);
         var myurl = "https://www.tumblr.com/dashboard";
         var currenturl = "";
-        chrome.tabs.getCurrent(function(tab){
-        console.log(tab.url);
-        }
-        );
-        if(myurl == currenturl){
-            chrome.tabs.reload()
-        }
+        chrome.tabs.query({ currentWindow: true, active: true }, function (tabs) {
+            currenturl = tabs[0].url;
+
+            if (myurl == currenturl){
+
+                chrome.tabs.reload()
+            }
+
+        });
     });
 }
 
