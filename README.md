@@ -16,5 +16,17 @@ shown) and this post type will be hidden.
 
 ##Functionality##
 
+Every post type in Tumblr is identified by its own CSS class:
+
+- **Text posts:**  'post_full is_regular'
+- **Photo posts:** 'post_full is_photo'
+- **Quote posts:** 'post_full is_quote'
+- **Link posts:**  'post_full is_link'
+- **Chat posts:**  'post_full is_conversation'
+- **Audio posts:** 'post_full is_audio'
+- **Video posts:** 'post_full is_video'
+- **Ask posts:**   'post_full is_ask'
+
+
 Uses JQuery and Javascript to read the div elements that contain the class
 of a certain post type and hides it.
