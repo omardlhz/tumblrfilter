@@ -10,12 +10,12 @@ shown) and this post type will be hidden.
 
 ## Future Updates ##
 
-- Automatically look for new content when none is found.
-	*When no one has recently posted a post with the post
-	 types that the user has enabled, an empty dashboard
-	 will appeared. For viewing more posts the user has to
-	 scroll up and down until a post with the desired post
-	 type appears, **This will be fixed in the next version** *
+- When no one has recently posted a post with the post
+  types that the user has enabled, an empty dashboard
+  will appeared. For viewing more posts the user has to
+  scroll up and down until a post with the desired post
+  type appears, **This will be fixed in the next version.**
+
 - Filtering of single tumblr blogs.
 
 
