@@ -14,7 +14,7 @@ shown) and this post type will be hidden.
   types that the user has enabled, an empty dashboard
   will appeared. For viewing more posts the user has to
   scroll up and down until a post with the desired post
-  type appears, **This will be fixed in the next version.**
+  type appears, **this will be fixed in the next version.**
 
 - Filtering of single tumblr blogs.
 
@@ -40,4 +40,17 @@ has disabled, this DIV element is hidden by the use of JQuery. Like this,
 hiding every single post which its post type has been disabled by the user.
 
 *Disclaimer: Tumblr Filter is not affiliated or supported by <a href="www.tumblr.com">Tumblr</a>.* 
+
+
+##File Breakdown##
+- **greyed:** contains all the grayed out buttons when a post type is disabled.
+- **shapes:** contains all the normal buttons when a post type is enabled.
+- **assets.sketch:** Sketch 3 file of all the assets (Icons and buttons)
+- **icon_*.png:** Extension icon in different dimensions.
+- **jquery-2.1.4.min.js:** JQuery library.
+- **manifest.json:** Reference to all the files and permissions of Chrome extension.
+- **popup.css:** Stylesheet for extension popup window.
+- **popup.html:** Popup window.
+- **popup.js:** Controls the popup.html file, receives toggle events from buttons and saves button state to chrome storage.
+- **toggleScript.js:** Enables or disables posts in Tumblr.com by post type depending on what is saved in chrome storage.
 
