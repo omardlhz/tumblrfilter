@@ -39,8 +39,6 @@ of a child DIV contains the words that identify a post type that the user
 has disabled, this DIV element is hidden by the use of JQuery. Like this,
 hiding every single post which its post type has been disabled by the user.
 
-*Disclaimer: Tumblr Filter is not affiliated or supported by <a href="www.tumblr.com">Tumblr</a>.* 
-
 
 ##File Breakdown##
 - **greyed:** contains all the grayed out buttons when a post type is disabled.
@@ -53,4 +51,7 @@ hiding every single post which its post type has been disabled by the user.
 - **popup.html:** Popup window.
 - **popup.js:** Controls the popup.html file, receives toggle events from buttons and saves button state to chrome storage.
 - **toggleScript.js:** Enables or disables posts in Tumblr.com by post type depending on what is saved in chrome storage.
+
+
+*Disclaimer: Tumblr Filter is not affiliated or supported by <a href="www.tumblr.com">Tumblr</a>.* 
 
