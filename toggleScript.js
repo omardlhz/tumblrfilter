@@ -10,7 +10,7 @@ chrome.storage.sync.get(
             function(mutations, observer) {
 
                 // Text Post
-                if(items.textVal == true){
+                if(items.text == true){
                     $("[class*='post_full is_regular']").hide();
                 }
                 else{
@@ -18,7 +18,7 @@ chrome.storage.sync.get(
                 }
 
                 // Photo Posts
-                if(items.picVal == true){
+                if(items.picture == true){
                     $("[class*='post_full is_photo']").hide();
                 }
                 else{
@@ -26,7 +26,7 @@ chrome.storage.sync.get(
                 }
 
                 // Quote Posts
-                if(items.quoteVal == true){
+                if(items.quote == true){
                     $("[class*='post_full is_quote']").hide();
                 }
                 else{
@@ -34,7 +34,7 @@ chrome.storage.sync.get(
                 }
 
                 // Link Posts
-                if(items.linkVal == true){
+                if(items.link == true){
                     $("[class*='post_full is_link']").hide();
                 }
                 else{
@@ -42,7 +42,7 @@ chrome.storage.sync.get(
                 }
 
                 // Chat Posts
-                if(items.linkVal == true){
+                if(items.chat == true){
                     $("[class*='post_full is_conversation']").hide();
                 }
                 else{
@@ -50,7 +50,7 @@ chrome.storage.sync.get(
                 }
 
                 // Audio Posts
-                if(items.musicVal == true){
+                if(items.music == true){
                     $("[class*='post_full is_audio']").hide();
                 }
                 else{
@@ -58,7 +58,7 @@ chrome.storage.sync.get(
                 }
 
                 // Video Posts
-                if(items.vidVal == true){
+                if(items.video == true){
                     $("[class*='post_full is_video']").hide();
                 }
                 else{
@@ -66,7 +66,7 @@ chrome.storage.sync.get(
                 }
 
                 // Ask Posts
-                if(items.askVal == true){
+                if(items.ask == true){
                     $("[class*='post_full is_note']").hide();
                 }
                 else{

@@ -1,5 +1,5 @@
 html{
-	height: 219px;
+  height: 219px;
   background-color: #36465D;
 }
 
@@ -35,184 +35,84 @@ p.header{
 }
 
 #toggles{
+  padding-top: 5px;
   text-align: center;
   border-radius: 10px;
   background-color: white;
-  margin-bottom: 8px;
 }
 
-#toggles input[type=checkbox]{
-    display: none;
-}
-
-.textUp{
-
-	background-image: url(shapes/text.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
-    margin-top: 15px;
-}
-
-.textDown{
-
-  background-image: url(greyed/textG.png);
+.toggle{
   width: 49px;
   height: 48px;
   border: none;
   outline: 0;
   background-color: transparent;
   margin: 5px;
-  margin-top: 15px;
 }
 
-.chatUp{
-	background-image: url(shapes/chat.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
+.text{
+  background-image: url(shapes/text.png);
 }
 
-.chatDown{
+.text.disabled{
+
+  background-image: url(greyed/textG.png);
+}
+
+.chat{
+  background-image: url(shapes/chat.png);
+}
+
+.chat.disabled{
   background-image: url(greyed/chatG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
 }
 
-.linkUp{
-	background-image: url(shapes/link.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
-    margin-top: 15px;
+.link{
+  background-image: url(shapes/link.png);
 }
 
-.linkDown{
+.link.disabled{
   background-image: url(greyed/linkG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
-    margin-top: 15px;
 }
 
-.musicUp{
-	background-image: url(shapes/music.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
+.music{
+  background-image: url(shapes/music.png);
 }
 
-.musicDown{
+.music.disabled{
   background-image: url(greyed/musicG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
 }
 
-.pictureUp{
-	background-image: url(shapes/picture.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
-    margin-top: 15px;
+.picture{
+  background-image: url(shapes/picture.png);
 }
 
-.pictureDown{
+.picture.disabled{
   background-image: url(greyed/pictureG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
-    margin-top: 15px;
 }
 
-.quoteUp{
-	background-image: url(shapes/quote.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
-    margin-top: 15px;
+.quote{
+  background-image: url(shapes/quote.png);
 }
 
-.quoteDown{
+.quote.disabled{
   background-image: url(greyed/quoteG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
-    margin-top: 15px;
 }
 
-.videoUp{
-	background-image: url(shapes/video.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
+.video{
+  background-image: url(shapes/video.png);
 }
 
-.videoDown{
+.video.disabled{
   background-image: url(greyed/videoG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
 }
 
-.askUp{
-	background-image: url(shapes/ask.png);
-	width: 49px;
-    height: 48px;
-    border: none;
-   	outline: 0;
-   	background-color: transparent;
-   	margin: 5px;
+.ask{
+  background-image: url(shapes/ask.png);
 }
 
-.askDown{
+.ask.disabled{
   background-image: url(greyed/askG.png);
-  width: 49px;
-    height: 48px;
-    border: none;
-    outline: 0;
-    background-color: transparent;
-    margin: 5px;
 }
 
 .btn {
@@ -241,6 +141,6 @@ p.header{
   background-image: -moz-linear-gradient(top, #e0e0e0, #fafafa);
   background-image: -ms-linear-gradient(top, #e0e0e0, #fafafa);
   background-image: -o-linear-gradient(top, #e0e0e0, #fafafa);
-  background-image: linear-gradient(to bottom, #e0e0e0, #fafafa);
+  background-image: linear-gradient(bottom, #e0e0e0, #fafafa);
   text-decoration: none;
 }
