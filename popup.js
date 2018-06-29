@@ -99,9 +99,7 @@ function ask(){
     else{
         document.getElementById("ask").className = "askUp";
     }
-
 }
-
 
 function save(){
 
@@ -215,14 +213,14 @@ function getOptions(){
 
 
 document.addEventListener('DOMContentLoaded', function () {
-  document.querySelector('#text').addEventListener('click', text);
-  document.querySelector('#picture').addEventListener('click', picture);
-  document.querySelector('#quote').addEventListener('click', quote);
-  document.querySelector('#link').addEventListener('click', link);
-  document.querySelector('#chat').addEventListener('click', chat);
-  document.querySelector('#music').addEventListener('click', music);
-  document.querySelector('#video').addEventListener('click', video);
-  document.querySelector('#ask').addEventListener('click', ask);
-  document.querySelector('#save').addEventListener('click', save);
+  document.getElementById('text').addEventListener('click', text);
+  document.getElementById('picture').addEventListener('click', picture);
+  document.getElementById('quote').addEventListener('click', quote);
+  document.getElementById('link').addEventListener('click', link);
+  document.getElementById('chat').addEventListener('click', chat);
+  document.getElementById('music').addEventListener('click', music);
+  document.getElementById('video').addEventListener('click', video);
+  document.getElementById('ask').addEventListener('click', ask);
+  document.getElementById('save').addEventListener('click', save);
   getOptions()
 });
