@@ -115,15 +115,18 @@ function save(){
     var ask = document.getElementById("ask").className == "askDown";
     
     chrome.storage.sync.set({
-        textVal: text,
-        picVal: picture,
-        quoteVal: quote,
-        linkVal: link,
-        chatVal: chat,
-        musicVal: music,
-        vidVal: video,
-        askVal: ask
-    }, function(){
+        postSettings: {
+            textVal: text,
+            picVal: picture,
+            quoteVal: quote,
+            linkVal: link,
+            chatVal: chat,
+            musicVal: music,
+            vidVal: video,
+            askVal: ask
+        }
+    },
+    function(){
 
         var status = document.getElementById('status');
         status.textContent = 'Options saved.';
@@ -139,83 +142,75 @@ function save(){
 
                 chrome.tabs.reload()
             }
-
         });
     });
 }
 
 function getOptions(){
 
-    chrome.storage.sync.get({
+    chrome.storage.sync.get(
+        ["postSettings"],
+        function(items){
 
-        textVal: false,
-        picVal: false,
-        quoteVal: false,
-        linkVal: false,
-        chatVal: false,
-        musicVal: false,
-        vidVal: false,
-        askVal: false
-    }, function(items){
-        if (items.textVal == false){
-            document.getElementById("text").className = "textUp";
-        }
-        else{
-            document.getElementById("text").className = "textDown";
-        }
+            items = items.postSettings;
 
-        if (items.picVal == false){
-            document.getElementById("picture").className = "pictureUp";
-        }
-        else{
-            document.getElementById("picture").className = "pictureDown";
-        }
+            if (items.textVal == false){
+                document.getElementById("text").className = "textUp";
+            }
+            else{
+                document.getElementById("text").className = "textDown";
+            }
 
-        if(items.quoteVal == false){
-            document.getElementById("quote").className = "quoteUp";
-        }
-        else{
-            document.getElementById("quote").className = "quoteDown";
-        }
+            if (items.picVal == false){
+                document.getElementById("picture").className = "pictureUp";
+            }
+            else{
+                document.getElementById("picture").className = "pictureDown";
+            }
 
-        if(items.linkVal == false){
-            document.getElementById("link").className = "linkUp";
-        }
-        else{
-            document.getElementById("link").className = "linkDown";
-        }
+            if(items.quoteVal == false){
+                document.getElementById("quote").className = "quoteUp";
+            }
+            else{
+                document.getElementById("quote").className = "quoteDown";
+            }
 
-        if(items.chatVal == false){
-            document.getElementById("chat").className = "chatUp";
-        }
-        else{
-            document.getElementById("chat").className = "chatDown";
-        }
+            if(items.linkVal == false){
+                document.getElementById("link").className = "linkUp";
+            }
+            else{
+                document.getElementById("link").className = "linkDown";
+            }
 
-        if(items.musicVal == false){
-            document.getElementById("music").className = "musicUp";
-        }
-        else{
-            document.getElementById("music").className = "musicDown";
-        }
+            if(items.chatVal == false){
+                document.getElementById("chat").className = "chatUp";
+            }
+            else{
+                document.getElementById("chat").className = "chatDown";
+            }
 
-        if(items.vidVal == false){
-            document.getElementById("video").className = "videoUp";
-        }
-        else{
-            document.getElementById("video").className = "videoDown";
-        }
+            if(items.musicVal == false){
+                document.getElementById("music").className = "musicUp";
+            }
+            else{
+                document.getElementById("music").className = "musicDown";
+            }
 
-        if(items.askVal == false){
-            document.getElementById("ask").className = "askUp";
+            if(items.vidVal == false){
+                document.getElementById("video").className = "videoUp";
+            }
+            else{
+                document.getElementById("video").className = "videoDown";
+            }
+
+            if(items.askVal == false){
+                document.getElementById("ask").className = "askUp";
+            }
+            else{
+                document.getElementById("ask").className = "askDown";
+            }
         }
-        else{
-            document.getElementById("ask").className = "askDown";
-        }
-
-    });
-
-
+    );
 }
 
 
