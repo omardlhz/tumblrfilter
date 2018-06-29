@@ -49,60 +49,16 @@ function getOptions(){
 
             items = items.postSettings;
 
-            if (items.text == false){
-                document.getElementById("text").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("text").classList.add("disabled");
-            }
+            for(id in items){
 
-            if (items.picture == false){
-                document.getElementById("picture").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("picture").classList.add("disabled");
-            }
+                if(!items[id]){
 
-            if(items.quote == false){
-                document.getElementById("quote").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("quote").classList.add("disabled");
-            }
+                    document.getElementById(id).classList.remove("disabled");
+                }
+                else{
 
-            if(items.link == false){
-                document.getElementById("link").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("link").classList.add("disabled");
-            }
-
-            if(items.chat == false){
-                document.getElementById("chat").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("chat").classList.add("disabled");
-            }
-
-            if(items.music == false){
-                document.getElementById("music").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("music").classList.add("disabled");
-            }
-
-            if(items.video == false){
-                document.getElementById("video").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("video").classList.add("disabled");
-            }
-
-            if(items.ask == false){
-                document.getElementById("ask").classList.remove("disabled");
-            }
-            else{
-                document.getElementById("ask").classList.add("disabled");
+                    document.getElementById(id).classList.add("disabled");
+                }
             }
         }
     );
